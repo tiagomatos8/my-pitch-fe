@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: react-nginx
+    image: docker-react-nginx
+    build:
+      context: .
+    ports:
+      - 5173:80

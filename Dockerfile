@@ -12,4 +12,6 @@ FROM nginx:1.25
 WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 COPY --from=builder /app/dist .
+WORKDIR /etc/nginx/conf.d
+COPY --from=builder /app/nginx/default.conf .
 ENTRYPOINT [ "nginx", "-g", "daemon off;" ]

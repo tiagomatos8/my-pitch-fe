@@ -29,7 +29,7 @@ export function App() {
         Click on the Vite and Preact logos to learn more
       </p>
       <p>
-        v0.0.3
+        v0.0.4
       </p>
     </>
   )
